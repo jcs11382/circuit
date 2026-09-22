@@ -1,0 +1,12 @@
+name = "circuit"
+main = "worker.js"
+compatibility_date = "2026-09-01"
+workers_dev = true
+
+# Add after the KV namespace exists:
+# [[kv_namespaces]]
+# binding = "CIRCUIT_KV"
+# id = "PASTE_ID"
+
+[triggers]
+crons = ["0 12 * * 1"]
